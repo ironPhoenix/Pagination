@@ -1,0 +1,1 @@
+此为分页插件 用于 spring于hibernate结合时的DAO层 将session 或者 hibernateTemplate 传入 即可得到相应的类。在类中有4个值供使用。具体使用方法参考history中的saop和maventest1

@@ -16,7 +16,7 @@ public class Pagination {
 
 	public Pagination(HibernateTemplate hibernateTemplate, String hql,
 			int pageSize, int pageNumber) {
-
+		if (pageSize<=0) throw new IllegalArgumentException("PageSize <= 0");
 		// 确定总条数
 		allObjectNumber = (int) getCount(hibernateTemplate, hql);
 		// 确定最大页数
